@@ -34,6 +34,6 @@ class EnderecoModel{
   factory EnderecoModel.fromJson(String json) =>
       EnderecoModel.fromMap(jsonDecode(json));
 
-  String toJson() => json.encode(toMap());
+  String toJson() => jsonEncode(toMap());
 
 }
